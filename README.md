@@ -64,7 +64,32 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 - Roles assigned and team synced
 
 ---
+---
 
+# DAILY SCRUM LOGS
+
+## DAY 1 (FRIDAY) - SPRINT PLANNING
+
+### Activities:
+- Defined Sprint Goal and User Stories.
+- Created GitHub repository and Asana board.
+- Assigned feature branches and roles.
+- Initialized GitHub repository with “main” branch and feature branches: frontend-ui, backend-crud, and qa-testing.
+
+### Individual Logs:
+
+| Name | Role | What I Did | What I’ll Do | Blockers |
+|------|------|------------|--------------|-----------|
+| Christian Yuan Balitaan | Scrum Master (SM) | Facilitated sprint planning; set up Asana columns and invited members; ensured tasks aligned with sprint goals. Set up the GitHub environment for the project. | Conduct Day 2 stand-up and monitor Git commits. | None |
+| Peter Rom Mikael Santiago | Product Owner (PO) | Defined project vision, wrote user stories, approved backlog items; verified all cards created in Asana. Moved the cards to “To Do”. | Review progress and clarify acceptance criteria during Day 2. | None |
+| Paolo Enrico San Gabriel | Front-End Developer (FD) | Discussed layout and basic UI wireframe for the output. | Start HTML/CSS UI development for Add Task and Mark Complete. | None |
+| RJ Castellano | Back-End Developer (BD) | Planned PHP CRUD logic and DB schema. | Set up XAMPP database and PHP scripts for CRUD. | None |
+| Alexander Jade Francisco | QA Tester (QA) | Defined test cases and checklist for the QA report and committed the template to the GitHub repo. | Prepare test data and environment for feature testing on Day 3. | None |
+
+### ASANA BOARD STATUS (END OF DAY 1)
+- All created user stories (Backlogs) from US01–US06 are moved to “To Do”.
+- Columns Established: Backlog, To Do, In Progress, Done.
+- No stories are in “In Progress” yet; development will begin on Day 2.
 ## EXIT CRITERIA
 - Working prototype deployed online
 - All user stories closed in Asana
