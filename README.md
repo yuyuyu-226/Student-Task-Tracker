@@ -27,5 +27,3 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 | Paolo Enrico San Gabriel | Front-End Developer (FD) | Designs UI, implements forms and task display. | Provides Git logs, commits per task, and participates in Daily Scrums. |
 | RJ Castellano | Back-End Developer (BD) | Handles CRUD logic, connects data storage (local or DB). | Provides Git logs, commits per task, and participates in Daily Scrums. |
 | Alexander Jade Francisco | QA Tester (QA) | Tests all features, documents bugs, verifies Definition of Done. | Submits test notes, bug list, and contributes to Sprint Review. |
-You sent
-THanks youuu
