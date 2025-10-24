@@ -46,3 +46,26 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 | As a user, I want to edit or delete existing tasks. | Users can modify or remove a task from the dashboard. | Backend | To Do |
 | As a user, I want to view all my tasks in a list or card view. | Dashboard displays all tasks properly. | Frontend | To Do |
 | As a QA, I want to test each feature to ensure all tasks work as expected. | The test report lists all features tested and results. | QA | To Do |
+
+---
+
+## DEFINITION OF DONE
+- All CRUD features are functional (Add/Edit/Delete/Mark Complete)
+- Code pushed and merged into the main branch
+- QA verified functionality and UI consistency
+- No major console or runtime errors
+- Successfully deployed via GitHub Pages (CI/CD done)
+
+---
+
+## ENTRY CRITERIA
+- Backlog approved by Product Owner
+- Repo and Asana tasks created
+- Roles assigned and team synced
+
+---
+
+## EXIT CRITERIA
+- Working prototype deployed online
+- All user stories closed in Asana
+- Sprint Review completed and documented
