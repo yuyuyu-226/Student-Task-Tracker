@@ -120,6 +120,16 @@ document.addEventListener("DOMContentLoaded", () => {
       await fetch(`${apiBase}/delete_task.php`, { method: "POST", body });
       await loadTasks();
     }
+    
+    if (toggleBtn) {
+        const id = toggleBtn.dataset.id;
+        const newStatus = toggleBtn.dataset.status;
+        const body = new FormData();
+        body.append("id", id);
+        body.append("status", newStatus);
+        await fetch(`${apiBase}/update_status.php`, { method: "POST", body });
+        await loadTasks(); // Reflect UI immediately
+      }
    });
 
    editForm.addEventListener("submit", async (e) => {

@@ -20,3 +20,13 @@ body {
   font-size: 0.9rem;
   color: #666;
 }
+
+.task-card.completed {
+    opacity: 0.85;
+    text-decoration: line-through;
+    border-left-color: #198754; /* green for complete */
+  }
+  
+  .task-card.pending {
+    border-left-color: #6c757d; /* gray for pending */
+  }
