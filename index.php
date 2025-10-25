@@ -40,8 +40,7 @@
         <div id="formMsg" class="mt-2"></div>
       </div>
     </div>
-
-    <div id="tasksContainer" class="row g-3"></div>
+    
 
   </div>
 
