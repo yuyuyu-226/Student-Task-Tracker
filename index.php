@@ -43,6 +43,44 @@
 
     <div id="tasksContainer" class="row g-3"></div>
 
+    <div class="modal fade" id="editModal" tabindex="-1">
+      <div class="modal-dialog">
+        <form id="editForm" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Task</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="edit_id" name="id">
+
+            <div class="mb-2">
+              <label class="form-label">Title</label>
+              <input type="text" id="edit_title" name="title" class="form-control" required>
+            </div>
+
+            <div class="mb-2">
+              <label class="form-label">Due date</label>
+              <input type="date" id="edit_due_date" name="due_date" class="form-control" required>
+            </div>
+
+            <div class="mb-2">
+              <label class="form-label">Priority</label>
+              <select id="edit_priority" name="priority" class="form-select" required>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
   </div>
 
   <!-- Bootstrap JS -->

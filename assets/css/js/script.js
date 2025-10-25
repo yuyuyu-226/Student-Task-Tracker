@@ -97,6 +97,40 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => (formMsg.innerText = ""), 2000);
   });
 
+  tasksContainer.addEventListener("click", async (e) => {
+    const editBtn = e.target.closest(".btn-edit");
+    const delBtn = e.target.closest(".btn-delete");
+    const toggleBtn = e.target.closest(".btn-toggle");
+
+    // Edit Task
+    if (editBtn) {
+      document.getElementById("edit_id").value = editBtn.dataset.id;
+      document.getElementById("edit_title").value = editBtn.dataset.title;
+      document.getElementById("edit_due_date").value = editBtn.dataset.due;
+      document.getElementById("edit_priority").value = editBtn.dataset.priority;
+      editModal.show();
+    }
+
+    // Delete Task
+    if (delBtn) {
+      const id = delBtn.dataset.id;
+      if (!confirm("Delete this task?")) return;
+      const body = new FormData();
+      body.append("id", id);
+      await fetch(`${apiBase}/delete_task.php`, { method: "POST", body });
+      await loadTasks();
+    }
+   });
+
+   editForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const body = new FormData(editForm);
+    body.append("id", document.getElementById("edit_id").value);
+    await fetch(`${apiBase}/edit_task.php`, { method: "POST", body });
+    editModal.hide();
+    await loadTasks();
+  });
+
   // Auto-load tasks initially
   loadTasks();
 });
