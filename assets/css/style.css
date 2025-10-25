@@ -1,0 +1,22 @@
+body {
+  background: #f8f9fa;
+}
+
+.task-card {
+  border-left: 6px solid #0d6efd;
+  padding: 12px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  padding: 20px 0;
+}
+
+.small-muted {
+  font-size: 0.9rem;
+  color: #666;
+}
