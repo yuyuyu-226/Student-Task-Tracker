@@ -41,6 +41,8 @@
       </div>
     </div>
 
+    <div id="tasksContainer" class="row g-3"></div>
+
   </div>
 
   <!-- Bootstrap JS -->
