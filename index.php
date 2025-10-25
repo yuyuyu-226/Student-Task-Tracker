@@ -41,6 +41,23 @@
       </div>
     </div>
 
+    <div class="row mb-3 g-2 align-items-center justify-content-end">
+      <div class="col-md-3">
+        <select id="filterPriority" class="form-select">
+          <option value="">All priorities</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="sortBy" class="form-select">
+          <option value="due_date">Sort by due date</option>
+          <option value="priority">Sort by priority</option>
+        </select>
+      </div>
+    </div>
+    
     <div id="tasksContainer" class="row g-3"></div>
 
     <div class="modal fade" id="editModal" tabindex="-1">

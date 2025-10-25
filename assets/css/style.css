@@ -25,8 +25,17 @@ body {
     opacity: 0.85;
     text-decoration: line-through;
     border-left-color: #198754; /* green for complete */
-  }
+}
   
   .task-card.pending {
     border-left-color: #6c757d; /* gray for pending */
+  }
+
+  .status-label {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 6px;
   }
