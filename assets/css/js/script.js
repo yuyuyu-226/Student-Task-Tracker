@@ -97,6 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => (formMsg.innerText = ""), 2000);
   });
 
+  filterPriority.addEventListener("change", () => loadTasks());
+  sortBy.addEventListener("change", () => loadTasks());
+
   tasksContainer.addEventListener("click", async (e) => {
     const editBtn = e.target.closest(".btn-edit");
     const delBtn = e.target.closest(".btn-delete");
@@ -120,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
       await fetch(`${apiBase}/delete_task.php`, { method: "POST", body });
       await loadTasks();
     }
-    
+
     if (toggleBtn) {
         const id = toggleBtn.dataset.id;
         const newStatus = toggleBtn.dataset.status;
