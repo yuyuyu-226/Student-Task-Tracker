@@ -62,6 +62,13 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 - Backlog approved by Product Owner
 - Repo and Asana tasks created
 - Roles assigned and team synced
+  
+---
+
+## EXIT CRITERIA
+- Working prototype deployed online
+- All user stories closed in Asana
+- Sprint Review completed and documented
 
 ---
 ---
@@ -90,7 +97,29 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 - All created user stories (Backlogs) from US01–US06 are moved to “To Do”.
 - Columns Established: Backlog, To Do, In Progress, Done.
 - No stories are in “In Progress” yet; development will begin on Day 2.
-## EXIT CRITERIA
-- Working prototype deployed online
-- All user stories closed in Asana
-- Sprint Review completed and documented
+  
+---
+
+## DAY 2 (SATURDAY) - DEVELOPMENT AND DAILY SCRUM
+
+### Activities:
+- Frontend UI development completed for Add Task form, task dashboard, edit/delete buttons, mark complete/pending, and live filter/sort.
+- Backend PHP CRUD endpoints created and tested: `add_task.php`, `get_tasks.php`, `edit_task.php`, `delete_task.php`, `update_status.php`.
+- Integrated frontend and backend for live updates using AJAX.
+- QA template reviewed; test environment prepared.
+
+### Individual Logs:
+
+| Name | Role | What I Did | What I’ll Do | Blockers |
+|------|------|------------|--------------|-----------|
+| Christian Yuan Balitaan | Scrum Master (SM) | Facilitated Day 2 stand-up; monitored development progress; ensured Git branches aligned with sprint plan. | Conduct Day 3 stand-up; monitor merge requests and commits. | None |
+| Peter Rom Mikael Santiago | Product Owner (PO) | Verified acceptance criteria for frontend/backend features; ensured backlog items were implemented correctly. | Review progress and clarify any remaining acceptance criteria. | None |
+| Paolo Enrico San Gabriel | Front-End Developer (FD) | Completed HTML/CSS layout for Add Task form and dashboard; implemented `renderTasks()` in `script.js`; integrated live AJAX updates; added edit/delete functionality and mark as complete/pending buttons; implemented live filter and sort UI. | Support backend integration for any bug fixes and prepare frontend for QA testing. | None |
+| RJ Castellano | Back-End Developer (BD) | Developed PHP CRUD endpoints: `add_task.php`, `get_tasks.php`, `edit_task.php`, `delete_task.php`, `update_status.php`; tested database connections and query logic; integrated with frontend via AJAX. | Monitor frontend integration and fix any data issues; optimize queries if needed. | None |
+| Alexander Jade Francisco | QA Tester (QA) | Reviewed test checklist; set up test environment; prepared initial test data for completed frontend/backend features. | Conduct feature testing on Day 3. | None |
+
+### ASANA BOARD STATUS (END OF DAY 2)
+- User stories US01–US06 moved from “To Do” → “In Progress”.
+- Subtasks for Frontend and Backend Developers are marked completed.
+- Subtasks for QA will be done on Day 3 before moving backlogs to “Done”.
+
