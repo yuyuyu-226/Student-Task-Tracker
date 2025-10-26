@@ -1,0 +1,46 @@
+name: Deploy Static Frontend to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # run only when pushing to main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Prepare Static Frontend for Deployment
+        run: |
+          # Clean existing docs folder
+          rm -rf docs
+          mkdir -p docs/assets
+          
+          # Copy frontend files
+          cp -r assets docs/
+          # Copy PHP frontend and rename it for static hosting
+          cp index.php docs/index.html
+          
+          echo "Frontend prepared in docs/"
+
+      - name: Commit Updated Docs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "Auto-deploy static frontend" || echo "No changes to commit"
+          git push origin main
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
