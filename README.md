@@ -30,22 +30,22 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 
 ---
 
-## 🧭 SPRINT PLANNING
+## SPRINT PLANNING
 
-### 🏁 SPRINT GOAL:
+### SPRINT GOAL:
 “To deliver a functional Student Task Tracker prototype with CRUD functionality, live task status updates, and automated deployment via CI/CD pipeline.”
 
 ---
 
-### 📋 USER STORIES / SPRINT BACKLOG CARDS
+### USER STORIES / SPRINT BACKLOG CARDS
 
 | User Story | Acceptance Criteria | Assigned To | Status |
 |-------------|---------------------|--------------|---------|
-| As a user, I want to add a task with a title and due date so I can plan my schedule. | Form allows adding new tasks; appears on the dashboard. | Frontend | To Do |
-| As a user, I want to mark tasks as complete so I can track my progress. | Task displays a check or color change once marked complete. | Backend | To Do |
-| As a user, I want to edit or delete existing tasks. | Users can modify or remove a task from the dashboard. | Backend | To Do |
-| As a user, I want to view all my tasks in a list or card view. | Dashboard displays all tasks properly. | Frontend | To Do |
-| As a QA, I want to test each feature to ensure all tasks work as expected. | The test report lists all features tested and results. | QA | To Do |
+| As a user, I want to add a task with a title and due date so I can plan my schedule. | Form allows adding new tasks; appears on the dashboard. | Frontend | Completed |
+| As a user, I want to mark tasks as complete so I can track my progress. | Task displays a check or color change once marked complete. | Backend | Completed |
+| As a user, I want to edit or delete existing tasks. | Users can modify or remove a task from the dashboard. | Backend | Completed |
+| As a user, I want to view all my tasks in a list or card view. | Dashboard displays all tasks properly. | Frontend | Completed |
+| As a QA, I want to test each feature to ensure all tasks work as expected. | The test report lists all features tested and results. | QA | Completed |
 
 ---
 
@@ -122,4 +122,153 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 - User stories US01–US06 moved from “To Do” → “In Progress”.
 - Subtasks for Frontend and Backend Developers are marked completed.
 - Subtasks for QA will be done on Day 3 before moving backlogs to “Done”.
+  
+---
+
+## DAY 3 (SUNDAY) - SPRINT REVIEW AND RETROSPECTIVE
+
+### Activities:
+- Integrated all frontend and backend modules successfully.
+- QA testing completed where all user stories (US01–US06) passed based on acceptance criteria.
+- CI/CD pipeline tested for deployment readiness.
+- Finalized project documentation including Daily Scrum Logs, Git Repository Activity,Sprint Review, and Retrospective.
+- Closed all Asana cards; moved all user stories to “Done.”
+- Prepared final build and demo-ready version of the system.
+
+### Individual Logs:
+
+| Name | Role | What I Did | What I’ll Do | Blockers |
+|------|------|------------|--------------|-----------|
+| Christian Yuan Balitaan | Scrum Master (SM) | Facilitated sprint review and retrospective; verified that CI/CD integration is working; ensured all branches were merged and repository activity properly documented; reviewed final project logs and Git commit history. | Finalize sprint documentation submission and oversee project closure. | None |
+| Peter Rom Mikael Santiago | Product Owner (PO) | Reviewed and approved QA test results; confirmed all user stories met the acceptance criteria; ensured system aligns with project vision and user needs. | Present final system demo and summarize sprint outcomes. | None |
+| Paolo Enrico San Gabriel | Front-End Developer (FD) | Supported final integration testing; resolved minor UI issues found during QA; ensured responsive layout and consistent styling; assisted in preparing the demo-ready version. | Support sprint demo presentation. | None |
+| RJ Castellano | Back-End Developer (BD) | Assisted QA in the final round of data validation; ensured database queries are optimized and secure; confirmed all CRUD endpoints and AJAX responses are stable. | Provide deployment setup support if needed. | None |
+| Alexander Jade Francisco | QA Tester (QA) | Conducted full test run on all modules; verified CRUD, UI interactions, and filter/sort functionality; generated and committed the QA report; validated the system’s overall stability and functionality. | Finalize and submit QA documentation; close testing checklist. | None |
+
+### ASANA BOARD STATUS (END OF DAY 3)
+- All User Stories (US01–US06) are completed and moved to “Done.”
+- Frontend, Backend, and Integration subtasks marked complete.
+- QA subtasks finished, all tests passed successfully.
+- The Asana board is closed.
+
+---
+---
+
+# GIT REPOSITORY ACTIVITY
+
+## GITHUB USERNAME OF MEMBERS
+
+| Member | Role | GitHub Username |
+|---------|------|-----------------|
+| Christian Yuan Balitaan | Scrum Master (SM) | [@yuyuyu-226](https://github.com/yuyuyu-226) |
+| Peter Rom Mikael Santiago | Product Owner (PO) | [@Pipo-hub](https://github.com/Pipo-hub) |
+| Paolo Enrico San Gabriel | Front-End Developer (FD) | [@paulthecheese79](https://github.com/paulthecheese79) |
+| RJ Castellano | Back-End Developer (BD) | [@Rjjjj1412](https://github.com/Rjjjj1412) |
+| Alexander Jade Francisco | QA Tester (QA) | [@bogart123456](https://github.com/bogart123456) |
+
+---
+
+## GIT REPOSITORY LINK
+You may access the GitHub repository link of the project through this link:  
+**[Student Task Tracker Repository](https://github.com/yuyuyu-226/Student-Task-Tracker)**
+
+---
+
+## GITHUB PAGES LINK
+You can access the static (front-end only) website through this link:  
+**[Student Task Tracker GitHub Pages](https://yuyuyu-226.github.io/Student-Task-Tracker/)**
+
+---
+
+## GIT BRANCHES USED
+
+| Branch Name | Description |
+|--------------|-------------|
+| `main` | Serves as the main branch for the project. |
+| `frontend-ui` | Used by the Front-End Developer to commit and push frontend components of the Student Task Tracker. |
+| `backend-crud` | Used by the Back-End Developer to commit and push backend components of the Student Task Tracker. |
+| `testing-qa` | Used for merging frontend and backend components for QA testing before creating a pull request into the main branch. |
+| `gh-pages` | Automatically created and used by GitHub Pages to host and deploy the project’s static frontend files (from the `docs/` directory) through CI/CD. |
+
+---
+---
+
+# SPRINT REVIEW AND RETROSPECTIVE
+
+## SUMMARY OF SPRINT RESULTS
+
+The **Student Task Tracker** project successfully met the sprint goal of developing a fully functional **web-based system** that allows students to add, edit, and manage their academic tasks. All planned **frontend, backend, and QA deliverables** were completed and merged into the `main` branch.
+
+### Accomplishments per Component
+
+- **Frontend** – Completed Add Task form, dashboard UI, edit/delete, mark complete/pending, and filter/sort features.  
+- **Backend** – Implemented PHP CRUD endpoints and connected to MySQL via XAMPP (`add_task.php`, `get_tasks.php`, `edit_task.php`, `delete_task.php`, `update_status.php`, `db_connect.php`).  
+- **Integration** – Successful frontend–backend integration using AJAX for live task updates, including sorting and filtering features.  
+- **QA** – Conducted functionality, usability, and validation tests. All major issues were resolved.  
+- **CI/CD** – Implemented continuous deployment via **GitHub Pages** to automatically update the live system upon pushing to the `main` branch (static frontend-only deployment).  
+- **Documentation** – Completed all necessary project documentation.  
+- **Asana** – All backlog items are now in “Done”; the Asana board is closed, marking the sprint’s completion.  
+
+The **3-day sprint** concluded successfully with all **user stories and goals achieved**.
+
+---
+
+## LESSONS LEARNED
+
+Some of the key takeaways from this sprint include:
+
+- **Git Discipline Matters** – Early coordination on branching and merging prevents future conflicts. A premature pull request from `backend-crud` to `main` and a subsequent revert caused merge confusion later when merging from `testing-qa`. This highlighted the importance of maintaining clean branch histories.  
+- **AJAX Integration** – Extra care was needed to ensure smooth frontend–backend data synchronization during testing.  
+- **CI/CD Setup** – CI/CD deployment only applied to the static frontend through GitHub Pages, while backend testing was done locally via XAMPP. The process reinforced the need for clear deployment strategies.  
+- **Time Management** – Dividing responsibilities per role allowed the team to efficiently complete the sprint within just three days.  
+
+---
+
+## TEAM REFLECTION
+
+Each member contributed effectively to completing the 3-day sprint:
+
+- **Scrum Master (SM)** – Ensured clear communication among members and maintained sprint momentum.  
+- **Product Owner (PO)** – Clarified requirements and confirmed that all user stories met the acceptance criteria.  
+- **Front-End & Back-End Developers (FD & BD)** – Collaborated closely to synchronize UI components with PHP logic during integration.  
+- **QA Tester (QA)** – Validated all features and confirmed that the system met its intended goal without critical issues.  
+
+---
+
+### Overall Reflection
+
+The sprint showcased the team’s ability to **collaborate, adapt, and deliver under tight deadlines**.  
+Although the 3-day sprint was brief, it effectively demonstrated each member’s **technical skills, communication, and commitment** to achieving the final project with no major issues.
+
+---
+---
+
+# CI/CD INTEGRATION
+
+## OVERVIEW
+
+The **Student Task Tracker** uses **GitHub Actions** and **GitHub Pages** to implement a Continuous Integration / Continuous Deployment (CI/CD) process.  
+In this setup, every time a commit is pushed or merged into the `main` branch, a workflow file (`.github/workflows/deploy-static-frontend.yml`) runs automatically to prepare and publish the static frontend to GitHub Pages.
+
+---
+
+## WORKFLOW FILE
+
+The CI/CD workflow configuration can be found in the project repository at:  
+**`/.github/workflows/deploy-static-frontend.yml`**
+
+This YAML file defines the automated steps for building the static frontend, committing it to the `main` branch, and deploying the contents of the `docs/` directory to **GitHub Pages**.
+
+---
+
+## HOW IT WORKS
+
+The workflow file will activate when code is pushed to the **main branch**.  
+After the workflow activates:
+
+- The action will clean the `docs` folder.  
+- Copies all the frontend assets (JS, CSS, and any other updated files) from the `/assets` folder.  
+- Converts the main `index.php` file into a static `index.html` file for GitHub Pages.  
+- The workflow bot commits the new version of the `docs` folder directly to the `main` branch.  
+- Finally, the workflow deploys everything inside `docs/` to **GitHub Pages**, making the updated app instantly live.
 
