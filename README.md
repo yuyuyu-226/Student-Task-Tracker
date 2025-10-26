@@ -153,6 +153,21 @@ Develop a simple Student Task Tracker System that allows users (students) to add
 
 ---
 ---
+# ASANA BOARD
+
+## ASANA BOARD LINK
+
+You may access the Asana board for the project through the link below:  
+**[Student Task Tracker – Asana Board](https://app.asana.com/1/968370432165371/project/1211737980440398/list/1211737881700973)**
+
+---
+
+### NOTE:
+The Asana board may require permission to view.  
+If the project is set to private, only invited members or those within the same Asana workspace or organization will be able to access it.
+
+---
+---
 
 # GIT REPOSITORY ACTIVITY
 
